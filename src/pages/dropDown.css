@@ -1,0 +1,91 @@
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:focus .dropdown-content {
+  display: block;
+}
+.menuBox {
+  display: block;
+}
+
+.rightMenu .controlBox .menuBox::before {
+  content: "≡";
+  font-size: 20px;
+  color: white;
+  display: block;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.rightMenuShow .Active .menuBox::before {
+  content: "X";
+  color: white;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.rightMenu .controlBox .txt::after {
+  content: "選單";
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+}
+.rightMenuShow .Active .txt::after {
+  content: "關閉";
+  color: white;
+  display: block;
+}
+.search:active {
+  box-shadow: inset 0 0 5px;
+}
+
+.rightMenuShow .Active .subMenu {
+  display: block;
+}
+.hideBox li a:after {
+  content: "";
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: #f08300;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://www.aseepsfund.org.tw/images/icon/arrow_down.png);
+}
+.hideBox .open a:after {
+  transform: rotate(180deg);
+  background-color: #006b4e;
+}
+.innerBox a {
+  font-size: 16px;
+  display: block;
+}
+.subMenu {
+  display: none;
+}
+.hideBox .open .subMenu {
+  display: block;
+}
+.footerText span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 26px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.footerText a {
+  color: #adadad;
+}
+.footer span {
+  color: white;
+}
